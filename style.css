@@ -1,0 +1,157 @@
+:root {
+    --black: #222;
+    --white: #fefefe;
+    --blue: #7079E5;
+}
+
+@font-face {
+    font-family: 'MainFont';
+    src: url('/BF_TEXT_REGULAR.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+body {
+    font-family: MainFont;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 900;
+	color: var(--blue);
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 900;
+	padding-bottom: 15px;
+}
+
+.text {
+	font-family: MainFont;
+	font-size: 14px;
+	resize: none;
+	background-color: var(--black);
+	color: var(--white);
+	border: 1px solid #444;
+	border-radius: 10px;
+	padding: 10px;
+	flex: 1;
+}
+
+.text:focus {
+	outline: none;
+	border: 1px solid var(--blue);
+}
+
+.text::placeholder {
+	transition: .3s;
+	color: #444;
+}
+
+section {
+	font-size: 17px;
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+section div {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 5px 0;
+}
+
+section div:last-child {
+	padding: 0;
+}
+@media(min-width: 600px) {
+body {
+	font-family: MainFont;
+	background-color: var(--black);
+	color: var(--white);
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 900;
+	color: var(--blue);
+}
+
+h2 {
+	font-size: 27px;
+	font-weight: 900;
+	padding-bottom: 22.5px;
+}
+
+.text {
+	font-family: MainFont;
+	font-size: 21px;
+	resize: none;
+	background-color: var(--black);
+	color: var(--white);
+	border: 1px solid #444;
+	border-radius: 15px;
+	padding: 15px;
+	flex: 1;
+}
+
+.text:focus {
+	outline: none;
+	border: 1px solid var(--blue);
+}
+
+.text::placeholder {
+	transition: .3s;
+	color: #444;
+}
+
+section {
+	font-size: 25.5px;
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 15px;
+	border-radius: 15px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+section div {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 7.5px 0;
+}
+
+section div:last-child {
+	padding: 0;
+}
+}
