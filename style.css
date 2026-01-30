@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'MainFont';
-    src: url('/BF_TEXT_REGULAR.otf') format('opentype');
+    src: url('BF_TEXT_REGULAR.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
